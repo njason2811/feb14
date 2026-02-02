@@ -1,0 +1,65 @@
+* {
+  font-family: "Sour Gummy";
+}
+
+body {
+  /* 1. Base: Soft Strawberry Milk Pink */
+  background-color: #ffeef4;
+
+  /* 2. The Vector Art */
+  /* This is a 200x200 tile containing the 4-part pattern. 
+     It uses smooth SVG curves, not pixels. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cdefs%3E%3Cstyle%3E .line { fill: none; stroke: %23455a64; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; } .grey { fill: %23cfd8dc; } .dark-grey { fill: %2390a4ae; } .white { fill: %23ffffff; } .red { fill: %23ef5350; } .orange { fill: %23ffb74d; } .green { fill: %2366bb6a; } .shine { fill: %23ffcdd2; opacity: 0.6; } %3C/style%3E%3C/defs%3E%3C!-- ==================== TOP LEFT: SYMMETRICAL HEART ==================== --%3E%3Cg transform='translate(50, 50) scale(0.8)'%3E%3Cpath class='red' d='M0 -20 C -20 -40, -50 -10, 0 40 C 50 -10, 20 -40, 0 -20 Z' /%3E%3Cpath class='line' d='M0 -20 C -20 -40, -50 -10, 0 40 C 50 -10, 20 -40, 0 -20 Z' /%3E%3Ccircle class='shine' cx='15' cy='-15' r='5' /%3E%3C/g%3E%3C!-- ==================== TOP RIGHT: STOCKING PENGUIN ==================== --%3E%3Cg transform='translate(150, 50)'%3E%3C!-- Body (Grey) --%3E%3Cpath class='grey' d='M-25 40 L 25 40 C 35 40, 35 10, 25 -10 C 15 -30, -15 -30, -25 -10 C -35 10, -35 40, -25 40 Z' /%3E%3C!-- Face Mask (Widows Peak) --%3E%3Cpath class='white' d='M-20 40 L 20 40 L 20 10 C 20 0, 10 -10, 0 5 C -10 -10, -20 0, -20 10 Z' /%3E%3C!-- The Stocking (Red) --%3E%3Cpath class='red' d='M-10 20 L 5 20 L 10 25 C 10 35, 5 38, 0 38 C -10 38, -15 30, -15 25 Z' /%3E%3C!-- Stocking Cuff & Holly --%3E%3Crect class='white' x='-10' y='18' width='15' height='5' rx='2' /%3E%3Ccircle class='green' cx='2' cy='20' r='2' /%3E%3C!-- Eyes --%3E%3Ccircle fill='%23333' cx='-8' cy='5' r='2.5' /%3E%3Ccircle fill='%23333' cx='8' cy='5' r='2.5' /%3E%3C!-- Beak --%3E%3Cellipse class='orange' cx='0' cy='10' rx='4' ry='2' /%3E%3C!-- Outline (Note: Only outlines top and sides, NOT bottom) --%3E%3Cpath class='line' d='M-25 40 C -35 40, -35 10, -25 -10 C -15 -30, 15 -30, 25 -10 C 35 10, 35 40, 25 40' /%3E%3C/g%3E%3C!-- ==================== BOTTOM LEFT: SQUISHY PENGUIN ==================== --%3E%3Cg transform='translate(50, 150)'%3E%3C!-- Body (Gumdrop Shape) --%3E%3Cpath class='white' d='M-25 40 L 25 40 C 30 40, 35 20, 30 0 C 20 -30, -20 -30, -30 0 C -35 20, -30 40, -25 40 Z' /%3E%3C!-- Grey Helmet --%3E%3Cpath class='dark-grey' d='M-30 0 C -20 -30, 20 -30, 30 0 C 25 -5, 15 -5, 0 5 C -15 -5, -25 -5, -30 0 Z' /%3E%3C!-- Outline --%3E%3Cpath class='line' d='M-25 40 L 25 40 C 30 40, 35 20, 30 0 C 20 -30, -20 -30, -30 0 C -35 20, -30 40, -25 40 Z' /%3E%3C!-- Happy Eyes (^ ^) --%3E%3Cpath class='line' d='M-15 10 L -10 5 L -5 10' style='stroke-width: 3px;' /%3E%3Cpath class='line' d='M5 10 L 10 5 L 15 10' style='stroke-width: 3px;' /%3E%3C!-- Beak --%3E%3Cellipse class='orange' cx='0' cy='15' rx='5' ry='3' /%3E%3C/g%3E%3C!-- ==================== BOTTOM RIGHT: SYMMETRICAL HEART ==================== --%3E%3Cg transform='translate(150, 150) scale(0.8)'%3E%3Cpath class='red' d='M0 -20 C -20 -40, -50 -10, 0 40 C 50 -10, 20 -40, 0 -20 Z' /%3E%3Cpath class='line' d='M0 -20 C -20 -40, -50 -10, 0 40 C 50 -10, 20 -40, 0 -20 Z' /%3E%3Ccircle class='shine' cx='15' cy='-15' r='5' /%3E%3C/g%3E%3C/svg%3E");
+
+  /* 3. Repeating Pattern */
+  background-repeat: repeat;
+
+  /* 4. Size of the Drawings */
+  /* 200px makes them look like nice, clear stickers */
+  background-size: 310px 310px;
+
+  /* 5. Rendering */
+  /* 'Auto' makes curves smooth (Vector style), not pixelated */
+  image-rendering: auto;
+}
+
+div {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 30%;
+  margin: 150px auto;
+  background-color: white;
+}
+
+div {
+  text-align: center;
+}
+
+div h2 {
+  color: rgb(255, 168, 183);
+}
+
+div img {
+  margin-bottom: 10px;
+}
+
+div button {
+  margin-bottom: 10px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+#yes {
+  background-color: rgb(100, 255, 100);
+  margin-right: 40px;
+}
+
+#yes:hover {
+  background-color: rgb(100, 235, 100);
+}
+
+#no {
+  background-color: rgb(255, 100, 100);
+  margin-left: 40px;
+}
